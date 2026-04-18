@@ -1,0 +1,8 @@
+2026-04-18 17:38:46,724 - INFO - Before variable transformation train columns : Index(['Pclass', 'SibSp', 'Parch', 'Fare', 'Age_randam'], dtype='str')
+2026-04-18 17:38:46,724 - INFO - Before variable transformation test columns : Index(['Pclass', 'SibSp', 'Parch', 'Fare', 'Age_randam'], dtype='str')
+2026-04-18 17:38:46,801 - INFO - after variable transformation train columns Index(['Pclass_trim', 'SibSp_trim', 'Parch_trim', 'Fare_trim',
+       'Age_randam_trim'],
+      dtype='str')
+2026-04-18 17:38:46,801 - INFO - after variable transformation test columns Index(['Pclass_trim', 'SibSp_trim', 'Parch_trim', 'Fare_trim',
+       'Age_randam_trim'],
+      dtype='str')

@@ -1,0 +1,33 @@
+2026-04-18 17:38:46,808 - INFO - Before train columns : (712, 8) 
+ :  Index(['Pclass_trim', 'SibSp_trim', 'Parch_trim', 'Fare_trim',
+       'Age_randam_trim', 'Sex_male', 'Embarked_randam_Q',
+       'Embarked_randam_S'],
+      dtype='str')
+2026-04-18 17:38:46,808 - INFO - Before test columns : (179, 8) 
+ : Index(['Pclass_trim', 'SibSp_trim', 'Parch_trim', 'Fare_trim',
+       'Age_randam_trim', 'Sex_male', 'Embarked_randam_Q',
+       'Embarked_randam_S'],
+      dtype='str')
+2026-04-18 17:38:46,809 - INFO - Number of GOOD COLUMNS : 7 : Index(['Pclass_trim', 'SibSp_trim', 'Fare_trim', 'Age_randam_trim', 'Sex_male',
+       'Embarked_randam_Q', 'Embarked_randam_S'],
+      dtype='str')
+2026-04-18 17:38:46,809 - INFO - Number of BAD COLUMNS : 1 : Index(['Parch_trim'], dtype='str')
+2026-04-18 17:38:46,809 - INFO - After FILTER METHODS train columns : (712, 8) 
+ :  Index(['Pclass_trim', 'SibSp_trim', 'Parch_trim', 'Fare_trim',
+       'Age_randam_trim', 'Sex_male', 'Embarked_randam_Q',
+       'Embarked_randam_S'],
+      dtype='str')
+2026-04-18 17:38:46,809 - INFO - After FILTER METHODS test columns : (179, 8) 
+ : Index(['Pclass_trim', 'SibSp_trim', 'Parch_trim', 'Fare_trim',
+       'Age_randam_trim', 'Sex_male', 'Embarked_randam_Q',
+       'Embarked_randam_S'],
+      dtype='str')
+2026-04-18 17:38:46,809 - INFO - ===========================HYPOTHESIS_TESTING=============================================================
+2026-04-18 17:38:46,813 - INFO - After HYPOTHESIS TESTING train columns : (712, 5) 
+ :  Index(['Pclass_trim', 'SibSp_trim', 'Fare_trim', 'Sex_male',
+       'Embarked_randam_S'],
+      dtype='str')
+2026-04-18 17:38:46,813 - INFO - After HYPOTHESIS TESTING test columns : (179, 5) 
+ : Index(['Pclass_trim', 'SibSp_trim', 'Fare_trim', 'Sex_male',
+       'Embarked_randam_S'],
+      dtype='str')

@@ -1,0 +1,111 @@
+2026-04-18 17:38:46,702 - INFO - shape (891, 8)
+2026-04-18 17:38:46,709 - INFO - sample data      Survived  Pclass   Sex   Age  SibSp  Parch     Fare Embarked
+555         0       1  male  62.0      0      0  26.5500        S
+209         1       1  male  40.0      0      0  31.0000        C
+604         1       1  male  35.0      0      0  26.5500        C
+266         0       3  male  16.0      4      1  39.6875        S
+808         0       2  male  39.0      0      0  13.0000        S
+2026-04-18 17:38:46,710 - INFO - missing values Survived      0
+Pclass        0
+Sex           0
+Age         177
+SibSp         0
+Parch         0
+Fare          0
+Embarked      2
+dtype: int64
+2026-04-18 17:38:46,712 - INFO - before train handling nulls (712, 7) 
+ Index(['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked'], dtype='str') 
+ Pclass        0
+Sex           0
+Age         140
+SibSp         0
+Parch         0
+Fare          0
+Embarked      2
+dtype: int64
+2026-04-18 17:38:46,713 - INFO - before test handling nulls (179, 7) 
+ Index(['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked'], dtype='str') 
+ Pclass       0
+Sex          0
+Age         37
+SibSp        0
+Parch        0
+Fare         0
+Embarked     0
+dtype: int64
+2026-04-18 17:38:46,722 - INFO - before train handling nulls (712, 7) 
+ Index(['Pclass', 'Sex', 'SibSp', 'Parch', 'Fare', 'Age_randam',
+       'Embarked_randam'],
+      dtype='str') 
+ Pclass             0
+Sex                0
+SibSp              0
+Parch              0
+Fare               0
+Age_randam         0
+Embarked_randam    0
+dtype: int64
+2026-04-18 17:38:46,723 - INFO - before test handling nulls (179, 7) 
+ Index(['Pclass', 'Sex', 'SibSp', 'Parch', 'Fare', 'Age_randam',
+       'Embarked_randam'],
+      dtype='str') 
+ Pclass             0
+Sex                0
+SibSp              0
+Parch              0
+Fare               0
+Age_randam         0
+Embarked_randam    0
+dtype: int64
+2026-04-18 17:38:46,724 - INFO - train numeric columns Index(['Pclass', 'SibSp', 'Parch', 'Fare', 'Age_randam'], dtype='str') 
+ (712, 5)
+2026-04-18 17:38:46,724 - INFO - test numeric columns Index(['Pclass', 'SibSp', 'Parch', 'Fare', 'Age_randam'], dtype='str') 
+ (179, 5)
+2026-04-18 17:38:46,724 - INFO - train categorical columns Index(['Sex', 'Embarked_randam'], dtype='str') 
+ (712, 2)
+2026-04-18 17:38:46,724 - INFO - test categorical columns Index(['Sex', 'Embarked_randam'], dtype='str') 
+ (179, 2)
+2026-04-18 17:38:46,724 - INFO - before variable transformation train columns Index(['Pclass', 'SibSp', 'Parch', 'Fare', 'Age_randam'], dtype='str')
+2026-04-18 17:38:46,724 - INFO - before variable transformation test columns Index(['Pclass', 'SibSp', 'Parch', 'Fare', 'Age_randam'], dtype='str')
+2026-04-18 17:38:46,802 - INFO - after variable transformation train columns Index(['Pclass_trim', 'SibSp_trim', 'Parch_trim', 'Fare_trim',
+       'Age_randam_trim'],
+      dtype='str')
+2026-04-18 17:38:46,802 - INFO - after variable transformation test columns Index(['Pclass_trim', 'SibSp_trim', 'Parch_trim', 'Fare_trim',
+       'Age_randam_trim'],
+      dtype='str')
+2026-04-18 17:38:46,806 - INFO - ========================================================================================
+2026-04-18 17:38:46,806 - INFO - final training data : (712, 8)
+2026-04-18 17:38:46,806 - INFO - Index(['Pclass_trim', 'SibSp_trim', 'Parch_trim', 'Fare_trim',
+       'Age_randam_trim', 'Sex_male', 'Embarked_randam_Q',
+       'Embarked_randam_S'],
+      dtype='str')
+2026-04-18 17:38:46,807 - INFO - training data null values : Pclass_trim          0
+SibSp_trim           0
+Parch_trim           0
+Fare_trim            0
+Age_randam_trim      0
+Sex_male             0
+Embarked_randam_Q    0
+Embarked_randam_S    0
+dtype: int64
+2026-04-18 17:38:46,807 - INFO - final testing data : (179, 8)
+2026-04-18 17:38:46,807 - INFO - Index(['Pclass_trim', 'SibSp_trim', 'Parch_trim', 'Fare_trim',
+       'Age_randam_trim', 'Sex_male', 'Embarked_randam_Q',
+       'Embarked_randam_S'],
+      dtype='str')
+2026-04-18 17:38:46,808 - INFO - testing data null values : Pclass_trim          0
+SibSp_trim           0
+Parch_trim           0
+Fare_trim            0
+Age_randam_trim      0
+Sex_male             0
+Embarked_randam_Q    0
+Embarked_randam_S    0
+dtype: int64
+2026-04-18 17:38:46,813 - INFO - Number of Rows for GOOD customer 1 : 268
+2026-04-18 17:38:46,814 - INFO - Number of Rows for BAD customer 0 : 444
+2026-04-18 17:38:46,814 - INFO - Training data size : (712, 5)
+2026-04-18 17:38:46,818 - INFO - Number of Rows for GOOD customer 1 : 444
+2026-04-18 17:38:46,818 - INFO - Number of Rows for BAD customer 0 : 444
+2026-04-18 17:38:46,818 - INFO - Training data size : (888, 5)

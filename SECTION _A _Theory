@@ -1,0 +1,123 @@
+Q1.What is Machine Learning? Explain its importance with real-world examples.
+->Machine learning is a subfield of AI.
+->Machine learning means it will learn everything from the data. and do predictions.
+->Also it will improve itself from its past experience.
+-------------------------------------------------------------------------------------------------------------------------------
+Q2.Explain types of Machine Learning:
+•	Supervised Learning
+•	Unsupervised Learning
+•	Reinforcement Learning
+
+->Supervised Learning is a subfield of ML.
+->In this their are 2 parts
+  1.Regression
+  ->Regression is a supervised learning technique in the machine learning.
+  ->Here the data has independent and dependent columns.
+  ->Where dependent columns are continuous
+  Here the algorithms are:
+                        1.Simple Linear Regression
+                        2.Multiple Linear Regression
+                        3.Polynomial Linear Regression
+                        4.Ridge Regression
+                        5.Lasso Regression
+  2.Classification
+  ->Classification is a supervised learning technique in the machine learning.
+  ->Here the data has independent and dependent columns.
+  ->Where dependent columns are discrete
+  Here the algorithms are:
+                        1.KNN
+                        2.Naive Bayes
+                        3.Logistic Regression
+                        4.Decision Tree
+                        5.Random Forest
+                        6.Adaboost
+                        7.Gradient Boosting
+                        8.XGB
+                        9.SVM
+
+->Unsupervised Learning is a subfield of ML.
+->In this their are 2 parts
+    1.Clustering
+    ->Clustering means grouping the similar data in to clusters.
+    ex: Blood groups
+Here the algorithms are:
+                      1.Hierarchical Clustering
+                      2.K-Means Clustering
+    2.Association
+    ->Association means it finds the relationship between the variables in a large dataset.
+    ex: If we buy a mobile, then we will also buy screen glass, cover for mobile . this extra products suggests for mobile is know as association.
+
+->Reinforcement Learning is a subfield of ML.
+->Reinforcement Learning means here the model will learn based on the tokens / fines.
+->we teaches the model by giving Feedbacks.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q3.What is Overfitting and Underfitting? Explain techniques to avoid them.
+
+->Overfitting means working well with the train data and not working well with the Test data.
+    is known as overfitting.
+->Underfitting means not working well with the train data and also and working well with the Test data.
+    is known as Underfitting.
+->Regularization is a technique used to solve the overfitting problem.
+    It is used to increase the test accuracy. and decrease the train accuracy because test accuracy is important.
+
+->Regularization is a techniques are Ridge(L2) and Lasso(L1):
+    -These techniques are PENALIZE the line to the test data.
+    -In Ridge the m values are close to the ZERO but not became zero. Because in formula their is a square.
+    -In Lasso their is a chance to became m values zeros. because in formula their is no square. variance 0 columns are removed. This is also known as FEATURE_SELECTION.
+    -Instead of using original m values. We can use Lasso m values and do prediction.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4.Explain Random Forest algorithm in detail:
+•	Working
+•	Advantages
+•	Disadvantages
+
+->Random Forest algorithm is a Ensemble technique means instead of training the data on single model, it trains on multiple models.
+->Random Forest algorithm is Bagging means columns wise training.
+->Random Forest algorithm takes only Decision tree.
+-> EX: It takes 5 Decision trees. On 5 Decision trees it train the data column wise. Suppose 5 prediction will came on that we
+        will apply  Votting classifier. Among  5 we take one prediction and finalize.
+->Advantage is getting more accuracy.
+->Disadvantage: In Votting Classifier it may choose wrong one.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q5.What is Feature Scaling? Explain:
+•	StandardScaler
+•	MinMaxScaler
+•	RobustScaler
+
+->StandardScaler is used to scale down the values from 0 to 1. StandardScaler range is from 0 to 1.
+    we will scale down the values because to get the accuracy predictions. Means Before scale down model think higher values columns are more
+    important than the lower values column. So after scale down model will think all column are equal. and model train in best way and gives
+    correct predictions.
+    FORMULA: (X-mean)/std
+
+->MinMaxScaler is used to scale down the values. this techniques same as StandardScaler but formula is different
+    here the values are replaced by using the formula.
+    Formula:
+            (x-x.min) / (x.max-x.min)
+
+->RobustScaler is used to scale down the  values based on the median and IQR
+        formula:
+                (X-median) / IQR
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

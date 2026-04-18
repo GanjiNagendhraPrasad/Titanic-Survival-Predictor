@@ -1,0 +1,51 @@
+2026-04-18 17:38:46,827 - INFO - -------lr----------
+2026-04-18 17:38:46,832 - INFO - [[73 32]
+ [11 63]]
+2026-04-18 17:38:46,833 - INFO - 0.7597765363128491
+2026-04-18 17:38:46,837 - INFO -               precision    recall  f1-score   support
+
+           0       0.87      0.70      0.77       105
+           1       0.66      0.85      0.75        74
+
+    accuracy                           0.76       179
+   macro avg       0.77      0.77      0.76       179
+weighted avg       0.78      0.76      0.76       179
+
+2026-04-18 17:38:46,837 - INFO - ----dt-----
+2026-04-18 17:38:46,839 - INFO - [[74 31]
+ [19 55]]
+2026-04-18 17:38:46,840 - INFO - 0.7206703910614525
+2026-04-18 17:38:46,844 - INFO -               precision    recall  f1-score   support
+
+           0       0.80      0.70      0.75       105
+           1       0.64      0.74      0.69        74
+
+    accuracy                           0.72       179
+   macro avg       0.72      0.72      0.72       179
+weighted avg       0.73      0.72      0.72       179
+
+2026-04-18 17:38:46,844 - INFO - -----rf------
+2026-04-18 17:38:46,852 - INFO - [[78 27]
+ [18 56]]
+2026-04-18 17:38:46,852 - INFO - 0.7486033519553073
+2026-04-18 17:38:46,856 - INFO -               precision    recall  f1-score   support
+
+           0       0.81      0.74      0.78       105
+           1       0.67      0.76      0.71        74
+
+    accuracy                           0.75       179
+   macro avg       0.74      0.75      0.74       179
+weighted avg       0.76      0.75      0.75       179
+
+2026-04-18 17:38:46,857 - INFO - -----------auc_roc---------------
+2026-04-18 17:38:51,099 - INFO - *********HYPERPARAMETER--TUNING*******************************
+2026-04-18 17:38:51,451 - INFO - The grid_result GridSearchCV(cv=3, estimator=LogisticRegression(),
+             param_grid=[{'C': [0.1, 1, 10], 'class_weight': [None, 'balanced'],
+                          'max_iter': [100, 200], 'penalty': ['l2'],
+                          'solver': ['liblinear', 'lbfgs']},
+                         {'C': [0.1, 1, 10], 'class_weight': [None, 'balanced'],
+                          'max_iter': [100, 200], 'penalty': ['l1'],
+                          'solver': ['liblinear']}],
+             scoring='accuracy')
+2026-04-18 17:38:51,452 - INFO - The grid best parameter are {'C': 0.1, 'class_weight': None, 'max_iter': 100, 'penalty': 'l2', 'solver': 'liblinear'}
+2026-04-18 17:38:51,452 - INFO - The grid Accuracy Score 0.7623873873873874

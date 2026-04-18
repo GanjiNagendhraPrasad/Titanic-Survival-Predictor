@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Titanic Survival Prediction</title>
+
+<style>
+body {
+  font-family: Arial;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  color: white;
+  text-align: center;
+}
+
+/* ABOUT AUTHOR */
+.author-section {
+  margin-top: 20px;
+  position: relative;
+}
+
+.author-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.author-box {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  color: black;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 260px;
+  z-index: 10;
+}
+
+/* MAIN CONTAINER */
+.container {
+  width: 400px;
+  margin: 60px auto;
+  background: white;
+  color: black;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #1d2671;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #c33764;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- ABOUT AUTHOR -->
+<div class="author-section">
+  <button class="author-btn" onclick="toggleAuthor()">👨‍💻 About Author</button>
+
+  <div id="authorBox" class="author-box">
+    <h3>About Author</h3>
+    <p>
+      <b>Name:</b> Ganji Nagendhra Prasad<br>
+      <b>Email:</b>
+      <a href="mailto:gnagendhraprasad4@gmail.com">
+        gnagendhraprasad4@gmail.com
+      </a>
+    </p>
+  </div>
+</div>
+
+<!-- MAIN FORM -->
+<div class="container">
+<h1>🚢 Titanic Survival</h1>
+
+<form action="/predict" method="post">
+
+<label>Pclass</label>
+<select name="Pclass">
+  <option value="1">1 (Upper Class)</option>
+  <option value="2">2 (Middle Class)</option>
+  <option value="3">3 (Lower Class)</option>
+</select>
+
+<label>Siblings / Spouse (SibSp)</label>
+<input type="number" name="SibSp" required>
+
+<label>Fare</label>
+<input type="number" name="Fare" required>
+
+<label>Sex</label>
+<select name="Sex">
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+</select>
+
+<label>Embarked</label>
+<select name="Embarked">
+  <option value="S">Southampton (S)</option>
+  <option value="C">Cherbourg (C)</option>
+  <option value="Q">Queenstown (Q)</option>
+</select>
+
+<button type="submit">Predict</button>
+
+</form>
+
+<div class="result">
+  {{ prediction }}
+</div>
+
+</div>
+
+<script>
+function toggleAuthor() {
+  const box = document.getElementById("authorBox");
+  box.style.display = (box.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</body>
+</html>

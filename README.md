@@ -6,9 +6,7 @@
   <a href="https://titanic-survival-predictor-94ur.onrender.com/">
     Titanic Survival Predictor
   </a><br>
-  💻 <b>GitHub Repository:</b> 
-  <a href="https://github.com/GanjiNagendhraPrasad/Titanic-Survival-Predictor.git">
-    View Code
+ 
   </a>
 </p>
 
